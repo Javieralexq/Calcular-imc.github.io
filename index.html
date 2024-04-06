@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" type "text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora IMC</h1>
+        <div id="calculator">
+
+            <input type="number" id="weight" placeholder="Peso (kg.)">
+                <br>
+                <br>
+                <br>
+            <input type="number" id="height" placeholder="Altura (cm.)">
+                <br>
+                <br>
+                <br>    
+            <button onclick="calculateIMC()">Calcular IMC</button>
+            <div id="result"></div>
+        </div>
+            <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rango de IMC</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Menos de 18.5</td>
+                    <td>Bajo de peso</td>
+                </tr>
+                <tr>
+                    <td>18.5 - 24.9</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>25 - 29.9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>30 - 34.9</td>
+                    <td>Obesidad grado 1</td>
+                </tr>
+                <tr>
+                    <td>35 - 39.9</td>
+                    <td>Obesidad grado 2</td>   
+                </tr>
+                <tr>
+                    <td>40 o más</td>
+                    <td>Obesidad grado 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            El sobrepeso puede causar elevación de la presión arterial, diabetes tipo 2.
+            Aumentar el riesgo de sufrir la enfermedad arterial</p>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
